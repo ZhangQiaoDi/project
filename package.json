@@ -3,13 +3,14 @@
   "version": "0.0.1",
   "description": "仅供广州h5_1612班学习使用",
   "main": "index.js",
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   "devDependencies": {
-  	"gulp": "^3.9.1",
-    "gulp-uglify": "^2.1.2",
-    "gulp-concat": "^2.6.1"
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
