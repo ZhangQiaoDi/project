@@ -5,7 +5,8 @@ requirejs.config({
 	// 设置别名
 	// 格式：别名:真实路径
 	paths:{
-		'jquery':'../lib/jquery-3.1.1'
+		'jquery':'../lib/jquery-3.1.1',
+		'template':'../lib/template-debug'
 	},
 	shim:{
 		'ajax':{
@@ -21,3 +22,13 @@ requirejs.config({
 //	home();
 //	common.animate();
 //});
+requirejs(['jquery','top','header','HeaderInfo'],function($,top,header,HeaderInfo){
+	var top = new top();
+	top.init();
+	
+	var header= new header();
+	header.init();
+	
+	var HeaderInfo= new HeaderInfo();
+	HeaderInfo.init();
+});

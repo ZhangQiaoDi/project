@@ -36,6 +36,8 @@ textarea {
 /*公共样式*/
 .fl {
   float: left;
+  background: red;
+  font-size: 16px;
 }
 
 .fr {
