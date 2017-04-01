@@ -1,6 +1,11 @@
+@charset "UTF-8";
+.wrap {
+  width: 1210px;
+  margin: 0 auto;
+}
+
 .top {
   width: 100%;
-  min-width: 1300px;
   height: 80px;
   margin: 0 auto;
 }
@@ -8,6 +13,7 @@
 .top img {
   width: 100%;
   height: 80px;
+  min-width: 1210px;
 }
 
 .header {
@@ -17,9 +23,7 @@
   background: #f2f2f2;
 }
 
-.header .wrap {
-  width: 1300px;
-  margin: 0 auto;
+.header .color {
   background: #f2f2f2;
 }
 
@@ -93,16 +97,16 @@
   width: 145px;
   background: white;
   position: absolute;
-  top: 0;
-  padding-top: 30px;
   border: 1px solid #ccc;
   border-top: 0;
   display: none;
+  z-index: 2;
 }
 
 .header-right li .my5lux ul {
+  z-index: 10;
   float: left;
-  display: none;
+  background: white;
 }
 
 .header-right li .my5lux ul li {
@@ -168,11 +172,6 @@
   z-index: -1;
 }
 
-.header-right .li3:hover .my5lux ul {
-  background: white;
-  display: block;
-}
-
 .header-right .weima {
   background: url(../img/brandstore_share.png) no-repeat -201px -369px;
 }
@@ -189,10 +188,10 @@
 }
 
 .headerInfo {
-  width: 1300px;
-  height: 106px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
+  float: left;
 }
 
 .headerInfo .logo {
@@ -263,7 +262,6 @@
 }
 
 .headerInfo .order dl {
-  width: 290px;
   background: #fff;
   position: relative;
   float: left;
@@ -325,5 +323,298 @@
 }
 
 .headerInfo .order dl:hover b {
+  display: block;
+}
+
+.nav {
+  width: 100%;
+  min-width: 1210px;
+  background: url(../img/navi_1pxbg.png) repeat-x;
+  height: 38px;
+  float: left;
+  vertical-align: middle;
+  box-shadow: 0 4px 4px #c7c6c6;
+  -o-box-shadow: 0 4px 4px #c7c6c6;
+  -moz-box-shadow: 0 4px 4px #c7c6c6;
+  -webkit-box-shadow: 0 4px 4px #c7c6c6;
+}
+
+.nav .menu {
+  height: 40px;
+  margin: 0 auto;
+  position: relative;
+  float: left;
+}
+
+.nav .menu li {
+  float: left;
+  z-index: 20;
+  font-size: 14px;
+  text-align: center;
+  font-family: 微软雅黑;
+  height: 40px;
+  line-height: 40px;
+}
+
+.nav .menu li a {
+  display: block;
+  width: 82px;
+  height: 38px;
+  color: #c8a985;
+  position: relative;
+}
+
+.nav .menu li a .marker {
+  font-size: 30px;
+  position: absolute;
+  top: 5px;
+  left: 7px;
+}
+
+.nav .menu li .wi {
+  color: white;
+}
+
+.nav .menu li .fenLei {
+  width: 130px;
+  background: url(../img/lux_index.png) no-repeat -8px -216px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav .menu li .leftmenu {
+  width: 130px;
+  display: block;
+  float: left;
+  position: relative;
+  z-index: 10;
+  vertical-align: top;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.nav .menu li .leftmenu ul li .group {
+  background-color: #fff;
+  filter: alpha(opacity=85);
+  -moz-opacity: 0.85;
+  -khtml-opacity: 0.85;
+  opacity: 0.85;
+  height: 36px;
+  text-align: left;
+  line-height: 36px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 48px;
+}
+
+.nav .menu li .leftmenu ul li .group a {
+  color: black;
+}
+
+.nav .menu li .leftmenu ul li .group i {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  height: 36px;
+  width: 20px;
+  display: block;
+  background: url(../img/share02.png) no-repeat -304px -33px;
+}
+
+.nav .menu li .leftmenu ul li .hodh {
+  background: url(../img/brand_category1.png) no-repeat -3px -4px;
+}
+
+.nav .menu li .leftmenu ul li .xiangbao {
+  background: url(../img/brand_category1.png) no-repeat -3px -36px;
+}
+
+.nav .menu li .leftmenu ul li .meizhuang {
+  background: url(../img/brand_category1.png) no-repeat -3px -68px;
+}
+
+.nav .menu li .leftmenu ul li .fuzhuang {
+  background: url(../img/brand_category1.png) no-repeat -3px -100px;
+}
+
+.nav .menu li .leftmenu ul li .wanbiao {
+  background: url(../img/brand_category1.png) no-repeat -3px -132px;
+}
+
+.nav .menu li .leftmenu ul li .peishi {
+  background: url(../img/brand_category1.png) no-repeat -3px -165px;
+}
+
+.nav .menu li .leftmenu ul li .xiexue {
+  background: url(../img/brand_category1.png) no-repeat -3px -196px;
+}
+
+.nav .menu li .leftmenu ul li .muying {
+  background: url(../img/brand_category1.png) no-repeat -3px -228px;
+}
+
+.nav .menu li .leftmenu ul li .meijiu {
+  background: url(../img/brand_category1.png) no-repeat -3px -261px;
+}
+
+.nav .menu li .leftmenu ul li .meishi {
+  background: url(../img/brand_category1.png) no-repeat -3px -294px;
+}
+
+.nav .menu li .leftmenu ul li .jiaju {
+  background: url(../img/brand_category1.png) no-repeat -3px -326px;
+}
+
+.nav .menu li .leftmenu ul li .dianzi {
+  background: url(../img/brand_category1.png) no-repeat -3px -357px;
+}
+
+.nav .menu li .leftmenu ul li .bangong {
+  background: url(../img/brand_category1.png) no-repeat -3px -390px;
+}
+
+.nav .menu li .leftmenu ul li .lipin {
+  background: url(../img/brand_category1.png) no-repeat -3px -422px;
+}
+
+.nav .menu li .leftmenu ul li .haiwai {
+  background: url(../img/brand_category1.png) no-repeat -3px -458px;
+}
+
+.nav .icon_Wrap {
+  float: right;
+}
+
+.nav .icon_Wrap li {
+  float: left;
+  margin-right: 12px;
+  width: 30px;
+  overflow: hidden;
+  line-height: 40px;
+}
+
+.nav .icon_Wrap li div {
+  width: 200px;
+  overflow: hidden;
+}
+
+.nav .icon_Wrap li div a {
+  display: block;
+  line-height: 40px;
+}
+
+.nav .icon_Wrap li div a span {
+  display: block;
+  width: 30px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  margin-right: 3px;
+}
+
+.nav .icon_Wrap li div a b {
+  font-weight: 400;
+  float: left;
+  color: #fff;
+  font-size: 12px;
+}
+
+.nav .icon_Wrap li .divlist01 span {
+  background: url(../img/share02.png) no-repeat -237px -66px;
+}
+
+.nav .icon_Wrap li .divlist02 span {
+  background: url(../img/share02.png) no-repeat -296px -66px;
+}
+
+.nav .icon_Wrap li .divlist03 span {
+  background: url(../img/share02.png) no-repeat -354px -66px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  min-width: 1210px;
+  height: 520px;
+  overflow: hidden;
+}
+
+.carousel ul {
+  position: relative;
+  width: 11200px;
+  height: 520px;
+  float: left;
+}
+
+.carousel ul li {
+  float: left;
+}
+
+.carousel ul li img {
+  display: block;
+}
+
+.carousel .page {
+  position: absolute;
+  right: 50%;
+  margin-right: -77px;
+  bottom: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.carousel .page span {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #efefef;
+  border-radius: 50%;
+  text-indent: -2000em;
+}
+
+.carousel .page .active {
+  background-color: #f60;
+  color: #fff;
+}
+
+.carousel .prev {
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: url(../img/templateleft.png) no-repeat;
+  color: #fff;
+  text-align: center;
+  opacity: 0.6;
+  left: 237px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.carousel .next {
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: url(../img/templateright.png) no-repeat;
+  color: #fff;
+  text-align: center;
+  opacity: 0.6;
+  right: 237px;
+  top: 50%;
+  margin-top: -25px;
+}
+
+.carousel:hover .next {
+  display: block;
+}
+
+.carousel:hover .prev {
   display: block;
 }
