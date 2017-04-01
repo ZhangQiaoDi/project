@@ -329,7 +329,7 @@ $min-width:1300px;
            }
            .leftmenu{
                 width: 130px;
-                display: block;
+                display: none;
                 float: left;
                 position: relative;
                 z-index: 10;
@@ -539,4 +539,263 @@ $min-width:1300px;
     }
 }
 
+//main
+.main{
+    width: 100%;
+    float: left;
+    .brandship_title{
+       margin: 40px 0 20px 0; 
+    }
+    .brandship_list{     
+        width: 100%;
+        float: left;  
+        li{
+            float: left;
+            position: relative;
+            margin-right: 10px;
+            a{
+                .bgpic{
+                    width: 234px;
+                    height: 329px;
+                    display: block;
+                }
+                .brandship_tbox{
+                    position: absolute;
+                    bottom: 1px;
+                    left: 30px;
+                    width: 174px;
+                    height: 154px;
+                    overflow: hidden;
+                    z-index: 1;
+                    .brand_hide{
+                        background: #fff;
+                        width: 106px;
+                        height: 154px;
+                        position: absolute;
+                        top: 100px;
+                        padding: 0 34px 0 34px;
+                        .brandlogopic{
+                            width: 60px;
+                            margin: 0 auto;
+                            margin-top: 10px;
+                            margin-bottom: 3px;
+                            display: block;
+                        }
+                        .splitline {
+                            height: 30px;
+                            line-height: 30px;
+                            text-align: center;
+                            .blackbar {
+                                display: inline-block;
+                                width: 20px;
+                                height: 2px;
+                                background: #000;
+                            }
+                        }
+                        .enbrand {
+                            font-size: 14px;
+                            text-align: center;
+                            color: #000;
+                        }
+                        .chnbrand {
+                            font-size: 14px;
+                            text-align: center;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hotstore_title{
+        width: 100%;
+        float: left;
+        overflow: hidden;
+        img{
+            float:left;
+        }
+        .hotarrowbtn{
+            float: right;
+            padding-top: 23px;
+            padding-right: 15px;
+            a{
+                .hot_pre{
+                    display: inline-block;
+                    width: 8px;
+                    height: 15px;
+                    background: url(../img/share02.png) no-repeat -160px -384px;
+                }
+                .hot_next{
+                    display: inline-block;
+                    width: 8px;
+                    height: 15px;
+                    background: url(../img/share02.png) no-repeat -180px -384px;
+    margin-left: 20px;
+                }
+            }
+        }
+    }
+    .hotflag{
+        height: 180px;
+        width: 100%;
+        .hotflagbox{
+            width: 100%;
+            li{
+                float: left;
+                width: 106px;
+                height: 55px;
+                padding: 14px 29px;
+                border: 1px solid #dfdfdf;
+                margin-right: 6px;
+                margin-bottom: 7px;
+                a{
+                    img{
+                        width: 107px;
+                        height: 54px;
+                    }
+                }
+            }
+        }        
+    }
+    .storesame_title{
+        width: 100%;
+        float: left;
+    }
+    .storesame_link {
+        width: 100%;
+        float: left;
+        margin-bottom: 15px;
+        li{
+            float: left;
+            width: 395px;
+            height: 30px;
+            background: #999;
+            color: #fff;
+            line-height: 30px;
+            text-align: center;
+            font-size: 14px;
+            margin-right: 8px; 
+        }
+        .st-active{
+            background-color: rgb(0, 0, 0);
+        }
+    }
+    .storesame{
+        ul{
+            width: 100%;
+            float:left;
+            li{
+                float:left;
+                .storesameb_left{
+                    float:left;
+                    img{
+                        width: 368px;
+                    }
+                }
+                .storesameb_right{
+                    float: left;
+                    margin-left: 9px;
+                    .storesameb_top{
+                        overflow: hidden;
+                        margin-bottom: 8px;
+                        .storesame_top1{
+                            width: 222px;
+                            height: 248px;
+                            text-align: center;
+                            border: 1px solid #ccc;
+                            overflow: hidden;
+                            float: left;
+                            margin-right: 8px;
+                            .storesametoptxt{
+                                //left: 0;
+                                font-size: 13px;
+                                color: #666;
+                                display: inline-block;
+                                //position: relative;
+                                .enbrand{
+                                    color: #000;                                   
+                                }
+                                p{
+                                    line-height: 24px;
+                                }
+                            }
+                            .storesametoppic{
+                                text-align: center;
+//                              position: relative;
+//                              left:0;
+//                              right: 0;
+                                a{
+                                    display: block;
+                                    img{
+                                        width: 150px;
+                                        padding: 2px 0 0 38px;
+                                    }
+                                }
+                            }
+                        }
+                        .storesame_top2{                          
+                            border: 1px solid #ccc;
+                            text-align: center;
+                            width: 360px;
+                            height: 248px;
+                            float: left;
+                            margin-right: 7px;
+                            .storesametoptxt{
+                                font-size: 13px;
+                                margin-top: 20px;
+                                margin-left: 70px;
+                                color: #666;
+                                display: inline-block;
+                                float: left;
+                                position: relative;
+                                left: 0;
+                                .enbrand {
+                                    color: #000;                                   
+                                }
+                                p{
+                                   line-height: 24px;  
+                                }
+                            }
+                            .storesametoppic2{
+                                img{
+                                    width: 180px;
+                                    margin-top: 35px;
+                                }
+                            }
+                        }
+                    }
+                    .storesameb_bottom{
+                        float: left;
+                        .storesamebottom1 {
+                            margin-right: 7px;
+                            border: 1px solid #ccc;
+                            float: left;
+                            width: 268px;
+                            height: 255px;
+                            .storesametoptxt{
+                                text-align: center;
+                                p{
+                                    line-height: 24px;
+                                }
+                            }
+                            .storesametoppic{
+                                img{
+                                    margin: 10px 0 0 55px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .darwin_3colum{
+                    width: 398px;
+                    display: inline-block;
+                    height: 520px;
+                    overflow: hidden;
+                    position: relative;
+                }
+            }
+        }
+    }
+    
+}
 

@@ -7,6 +7,8 @@ requirejs.config({
 	paths:{
 		'jquery':'../lib/jquery-3.1.1',
 		'template':'../lib/template-debug'
+
+		
 	},
 	shim:{
 		'ajax':{
@@ -22,13 +24,45 @@ requirejs.config({
 //	home();
 //	common.animate();
 //});
-requirejs(['jquery','top','header','HeaderInfo'],function($,top,header,HeaderInfo){
-	var top = new top();
-	top.init();
+//requirejs(['jquery','top','header','HeaderInfo','qq'],function($,top,header,HeaderInfo,qq){
+//	var top = new top();
+//	top.init();
+//	
+//	var header= new header();
+//	header.init();
+//	
+//	var HeaderInfo= new HeaderInfo();
+//	HeaderInfo.init();
+//});
+require(["jquery",'index'],function($,index){
+	index.init();
 	
-	var header= new header();
-	header.init();
-	
-	var HeaderInfo= new HeaderInfo();
-	HeaderInfo.init();
-});
+     //index.init()
+     //page.init()
+     //login.init()
+     //res.init()
+    //movielist.init()
+
+    //var test = new Test();
+//  var path = location.pathname; //进行路由设置
+//
+//  //console.log(path);
+//  if(path=="/day32/app/index/"){
+//      index.init()
+//  }else if(path=="/day32/app/page/"){
+//      page.init()
+//  }else if(path=="/day32/app/movielist/"){
+//      movielist.init()
+//  }else if(path=="/day32/app/login/"){
+//      login.init()
+//  }else if(path=="/day32/app/res/"){
+//      res.init()
+//  }else{
+//      index.init()
+//  }
+    //如果想要添加新的页面
+
+    //1 建一个文件夹 放入index.html
+    //2 建一个新的模块 在模块里面对页面进行设置
+    //3 在入口js 设置访问路由
+})

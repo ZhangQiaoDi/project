@@ -1,2 +1,4 @@
 #过滤包管理目录
 /node_modules
+
+/src/duoyu/*

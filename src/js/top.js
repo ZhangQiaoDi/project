@@ -1,24 +1,27 @@
+//定义主页模块
+//定义模块的方法
 define(['jquery','template'],function($,template){
-    // return一个函数/对象
+    //$ 属于局部变量  所以  不会影响其他的jquery对象
+    //一般情况下  模块会返回一个对象 获取构造函数
+    return {
+        init:function(){
+        	
+            $('body').append(this.top.top());
+            
+            this.bind();
+            return this
+        },
+        bind:function(){
+            
 
-    function Top(){
-        //var self =this;
-    }
-
-    Top.prototype.init=function(){
-         //var self =this;
-         $('body').append(this.template.top())
-    };
-    Top.prototype.template={
-        top:template.compile(
-        	`
-        		<div class="top">
+        },
+        top:{
+            top:template.compile(`
+                <div class="top">
 					<img src="../img/top.jpg"/>
-				</div>				
-        	`
-        )
+				</div> 
+            `)
+        }
     }
-   
-    return Top
-	
-});
+})
+
