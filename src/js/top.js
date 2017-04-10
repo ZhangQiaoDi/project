@@ -4,9 +4,8 @@ define(['jquery','template'],function($,template){
     //$ 属于局部变量  所以  不会影响其他的jquery对象
     //一般情况下  模块会返回一个对象 获取构造函数
     return {
-        init:function(){
-        	
-            $('body').append(this.top.top());
+        init:function(){          
+            $('.top').load('../html/top.html');
             
             this.bind();
             return this
@@ -14,13 +13,6 @@ define(['jquery','template'],function($,template){
         bind:function(){
             
 
-        },
-        top:{
-            top:template.compile(`
-                <div class="top">
-					<img src="../img/top.jpg"/>
-				</div> 
-            `)
         }
     }
 })
